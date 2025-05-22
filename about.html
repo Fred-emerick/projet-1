@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KYLIAN'S HOME INFOS</title>
+<style>
+    .{
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+        font-family: 'roboto',sans-serif;
+    }
+    body{
+        background-color:white;
+    }
+    .heading{
+        width: 90%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+        margin:20px auto;
+    }
+    .heading h1{
+        font-size: 50px;
+        color:black;
+        margin-bottom: 25px;
+        position: relative;
+    }
+    .heading h1::after{
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 4px;
+        display: block;
+        margin: 0 auto;
+        background-color: #4caf54;
+
+    }
+    .heading p{
+        font-size: 18px;
+        color: #666;
+        margin-bottom:  35px;
+    }
+    .contenair{
+        width: 90%;
+        margin: 0 auto;
+        padding: 10px 20px;
+    }
+    .about{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    .aboutimage{
+        flex: 1;
+        margin-right: 40px;
+        overflow: hidden;
+    }
+    .aboutimage img{
+        max-width:100%;
+        height: auto;
+        display: block;
+        transition: 0.5s ease;
+    }
+    .aboutimage:hover img{
+        transform: scale(1.2);
+    }
+    .aboutcontent{
+    flex: 1;
+    }
+    .aboutcontent h2{
+      font-size: 23px;
+      margin-bottom: 15px;
+      color: #333;
+    }
+    .aboutcontent p{
+        font-size: 18px;
+        line-height: 1.5;
+        color: #666;
+    }
+    .navbar{
+        display: flex;
+        position: relative;
+    }
+    .navbar li{
+        list-style: none;
+    }
+    .navbar a{
+        color: black;
+        text-decoration: none;
+        margin-left: 30px;
+        font-weight: 700;
+    }
+
+    .reserve{
+        padding: 10px 20px;
+        background-color: orange;
+        margin-top: -5px;
+    }
+
+    .reserve:hover{
+        background-color: orange;
+        transition: ease-out;
+    }
+
+    header .navbar li a:hover{
+        color: black;
+        border-bottom: 2px solid orange;
+    }
+</style>
+</head>
+<body>
+        <header>
+        <!--<a href="#" class="logo"><span>R</span>esto</a>-->
+            <ul class="navbar">
+                <li><a hre4f="index.html">HOME</a></li>
+                <li><a href="about.html">ABOUT US</a></li>
+                <li><a href="MENU.html">MENU</a></li>
+                <li><a href="#">EXPERT</a></li>
+                <li><a href="#">CONTACT US</a></li>
+                <a href="#" class="reserve">RESERVATION</a>
+            </ul>
+        </header>
+        <div class="heading">
+            <h1>
+                A propos de nous
+            </h1>
+            <P>KYLIAN'S HOME est une entreprise familiale qui depuis 22 ans veuille au confort
+                et a la satisfaction absolu de ses clients
+            </P>
+        </div>
+        <div class="contenair">
+            <section class="about">
+                <div class="aboutimage">
+                    <img src="./images/R.jpeg" alt="">
+                </div>
+                <div class="aboutcontent">
+                    <h2>historique</h2>
+                    <p> Fonde par M.x elle est actuellement dirige par ses filles ter et feu x.
+                        Avec des logements sur tout le territoire,KYLIAN'S HOME a toujours su garder
+                        la premiere place en matiere de logement de par le design chic et tres 
+                        distingue de ses meubles  </p>
+                </div>
+            </section>
+        </div>
+    
+</body>
+</html>

@@ -1,0 +1,158 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+       /* alert('Bonjour'); 
+        // la fonction affiche une boîte de dialogue avec "Bonjour" */
+
+       //  les opérateurs arithmétiques
+      /* var number1 = 3, number2 = 2, result;
+            result = number1 * number2;
+            alert(result); // Affiche : « 6 »   */
+
+    /*      var number = 3;
+            number = number + 5;
+                alert(number); // Affiche : « 8 »    */
+
+    /*     var number = 3;
+                number += 5;
+                alert(number); //  Affiche : « 8 »    */
+
+            /*var hi = 'Bonjour ', name = 'toi', result;
+            result = hi + name;
+            alert(result);
+            Affiche : "Bonjour toi"*/
+
+            /*var text = 'Bonjour ';
+            text += 'toi';
+            alert(text);
+            Affiche : "Bonjour toi"*/
+
+            /*var text, number1 = 4, number2 = 2;
+            text = number1 + '' + number2;
+            ON ajoute une chaine de caracteres vide
+            entre les deux nombres pour permettre une concratenation sans calcul 
+            alert(text); //Affiche : '42'*/
+
+            /*var userName = prompt('Entrez votre nom : ');
+            alert(userName); //Affiche le prenom entre par l'utilisateur*/
+
+            /*var start = 'Bonjour ', name, end = ' !', result;
+            name = prompt('Quel est votre prenom ?');
+            result =start + name + end;
+            alert(result);
+            //Affiche le prenom entre par l'utilisateur*/
+
+            /*var first, second, result;
+            first = prompt('Entrez le premier choffre : ');
+            second = prompt('Entrez le second chiffre : ');
+            result = parseInt(first) + parseInt(second);
+            // La fonction parseInt() transforme la chaine de caracteres
+            en nombre
+            alert(result);*/
+
+            /*var number1 = 2, number2 = 2, number3 = 4, result;
+            result = number1 == number2;// Au lieu d'une seule valeur, on en écrit deux avec l'opérateur de comparaison entre elles
+            alert(result);// la condition est donc vérifiée car les deux variables contiennent bien la même valeur
+
+            result = number1 == number3;// la condition n'est pas vérifiée car 2 est différent de 4
+            alert(result);
+            
+            result = number1 < number3;
+            alert(result);// la condition est vérifiée car 2 est différent de 4*/
+
+            /*//Exemple1 3.3La condition if else
+            if (confirm('Voulez-vous exécuter le code Javascript de cette page ?')) {
+                alert('Le code a bien été exécuté !');
+            }*/
+            /*//Exemple2 3.3La condition if else
+            if (confirm('Pour accéder à ce site vous devez être une fille, cliquez sur "OK" si c\'est le cas.')) {
+                alert('Vous allez être redirigé vers le site.');
+            }
+            else {
+                alert("Désolé, vous n'avez pas accès à ce site.");
+            }*/
+
+            /*//Exemple2 3.3La condition if else
+            var floor = parseInt(prompt("Entrez l'étage où l'ascenseur doit se rendre (de -2 à 30) :"));
+            if (floor == 0) {
+                alert('Vous vous trouvez déjà au rez-de-chaussée.');
+            }
+            else if (-2 <= floor && floor <= 30) {
+                alert("Direction l'étage n°" + floor + ' !');
+            }
+            else {
+                alert("L'étage spécifié n'existe pas.");
+            }*/
+
+            /*//Exemple sur 4.1 La condition switch
+            var drawer = parseInt(prompt('Choisissez le tiroir à ouvrir (1 à 4) :')); //onprécise bien le type de la valeur, ici un nombre avec la fonction parseInt()
+            switch (drawer) {
+            case 1: // on pose chaque cas l'un après l'autre ; on met des apostrophes si l'on vérifie des chaînes de caractères au lieu de nombres
+            alert('Contient divers outils pour dessiner : du papier, des crayons, etc.');
+            break; // on arrête la fonction pour passer à un autre cas
+            case 2:
+            alert('Contient du matériel informatique : des câbles, des composants, etc.');
+            break;
+            case 3:
+            alert('Ah ? Ce tiroir est fermé à clé ! Dommage !');
+            break;
+            case 4:
+            alert('Contient des vêtements : des chemises, des pantalons, etc.');
+            break;
+            default: // on pose une autre possibilité, pour gérer une erreur de l'utilisateur
+            alert("Info du jour : le meuble ne contient que 4 tiroirs et, jusqu'à preuve du contraire, les tiroirs négatifs n'existent pas.");
+            }*/
+
+            /*//Exemple du 4.2 Les ternaires
+            var startMessage = 'Votre genre : ',endMessage,
+                adult = confirm('Êtes-vous une fille ?');
+            endMessage = adult ? 'Fille' : 'Garçon';
+            alert(startMessage + endMessage);*/
+
+            //Exemple du 4.3. Exercices sur les conditions
+            //Enoncer : Fournir un commentaire selon l'âge de la personne.
+            /*var age = parseInt(prompt('Quel est votre âge ?'));
+            if (1 <= age && age <= 6) {
+            alert('Vous êtes un jeune enfant.');
+            }
+            else if (7 <= age && age <= 11) {
+            alert ('Vous êtes un enfant qui a atteint l\'âge de raison.');
+            }
+            else if (12 <= age && age <= 17) {
+            alert ('Vous êtes un adolescent.');
+            }
+            else if (18 <= age && age <= 120) {
+            alert ('Vous êtes un adulte.');
+            }
+            else {
+            alert ('Erreur !!');
+            }*/
+
+            //Exemple du 5.1. La boucle while
+            /*var number = 1;
+            while (number < 10) {
+number++; // Tant que le nombre est inférieur à 10, on l'incrémente de 1
+}
+            alert(number); // Affiche : « 10 »*/
+
+            //Exemple du 5.1. La boucle while
+            var prenoms = '', prenom; // On crée une variable prenoms pour mémoriser
+            while (true) {
+            prenom = prompt('Entrez un prénom :'); // L'utilisateur entre chaque prenom
+            if (prenom) {
+            prenoms += prenom + ' '; // Ajoute le nouveau prénom ainsi qu'une espace
+            } else {
+            break; // On quitte la boucle
+            }
+            }
+            alert(prenoms); // Affiche les prénoms à la suite
+    </script>
+        
+</body>
+</html>
